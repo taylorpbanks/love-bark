@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDog, faSignOutAlt, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import * as serviceWorker from './serviceWorker';
 
 import App from './App';
 
@@ -12,8 +12,8 @@ import './index.css';
 library.add(faDog, faCaretRight, faSignOutAlt);
 
 const app = (
-    <App />
-  )
+  <App />
+);
 
 ReactDOM.render(app, document.getElementById('root'));
 
