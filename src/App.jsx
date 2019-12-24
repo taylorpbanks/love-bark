@@ -5,6 +5,7 @@ import Home from './pages/home/home';
 import Login from './pages/login/login';
 import ContactUs from './pages/contact-us/contact-us';
 import AvailableDogs from './pages/available-dogs/available-dogs';
+import HowToAdopt from './pages/how-to-adopt/how-to-adopt';
 import Navigation from './framework/navigation/navigation';
 import Footer from './framework/footer/footer';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/available-dogs" component={AvailableDogs} />
           <Route path="/contact-us" component={ContactUs} />
+          <Route path="/how-to-adopt" component={HowToAdopt} />
         </div>
       </Router>
       <Footer />

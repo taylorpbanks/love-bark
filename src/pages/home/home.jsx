@@ -10,6 +10,16 @@ function Home(props) {
     props.history.push('/available-dogs');
   };
 
+  const getDisplayAge = (age) => {
+    const year = 12;
+
+    if (age <= year) {
+      return age + ' months';
+    }
+
+    return age / year + ' years'; 
+  };
+
   return (
     <div className="home-container">
       <img
@@ -41,7 +51,7 @@ function Home(props) {
             <div className="dog-card">
               <img src={require(`../../images/dogs/${dog.image}.jpg`)} />
               <h5>{dog.name}</h5>
-              {dog.age}
+              {getDisplayAge(dog.age)}
             </div>
           </Col>
          ))}

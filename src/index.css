@@ -6,6 +6,7 @@ html, body {
 body {
   background: rgb(2,0,36);
   background: fixed linear-gradient(360deg, rgba(9,121,69,1) 0%, rgba(0,212,255,1) 100%);
+  color: #444;
 }
 
 code {
@@ -60,7 +61,9 @@ button.btn-primary {
 }
 
 button.btn-primary:hover,
-button.btn-primary:focus {
+button.btn-primary:focus,
+button.btn-primary:active,
+button.btn-primary:not(:disabled):not(.disabled):active{
   background-color: #054c2b;
   border: 1px solid #054c2b;
 }
@@ -73,7 +76,9 @@ button.btn-secondary {
 }
 
 button.btn-secondary:hover,
-button.btn-secondary:focus {
+button.btn-secondary:focus,
+button.btn-secondary:active,
+button.btn-secondary:not(:disabled):not(.disabled):active {
   background-color: #097945;
   color: white;
   border: 2px solid #097945;

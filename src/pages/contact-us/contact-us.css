@@ -1,0 +1,38 @@
+.contact-us-container {
+    position: relative;
+    min-height: 650px;
+}
+
+.contact-us-container .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-us-container .headers {
+    padding: 15px;
+}
+
+/*mobile responsiveness*/
+@media only screen and (max-width: 768px) {
+    .contact-us-container .heading {
+        position: initial;
+    }
+
+    .contact-card {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.contact-us-img {
+    width:100%;
+}
+
+.contact-card {
+    padding: 30px;
+    border-radius: 15px;
+    word-break: break-word;
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px #d2d2d2;
+}

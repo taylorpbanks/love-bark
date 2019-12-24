@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.dog-card:hover {
+    box-shadow: 2px 2px 5px;
+}
+
 /*mobile responsiveness*/
 @media only screen and (max-width: 768px) {
     .home-container .welcome-msg {
