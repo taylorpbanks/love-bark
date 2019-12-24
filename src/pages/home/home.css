@@ -1,0 +1,33 @@
+.home-container {
+    position: relative
+}
+
+.welcome-img {
+    width:100%;
+}
+
+.home-container .welcome-msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* featured dog cards*/
+.dog-card {
+    border: 1px solid #d2d2d2;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d2d2d2;
+    cursor: hand;
+}
+
+.dog-card img {
+    width: 100%;
+}
+
+/*mobile responsiveness*/
+@media only screen and (max-width: 768px) {
+    .home-container .welcome-msg {
+        position: initial;
+    }
+}

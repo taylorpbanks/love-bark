@@ -1,0 +1,10 @@
+.App {
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    padding-bottom: 45px;
+}

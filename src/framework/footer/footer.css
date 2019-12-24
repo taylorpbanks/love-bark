@@ -1,0 +1,20 @@
+.footer-container {
+    border-top: 1px solid #d2d2d2;
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-container .contact {
+    font-size: .7em;
+    color: #097945;
+}
+
+.footer-container .links {
+    text-align: right;
+}
+
+.footer-container a {
+    padding: 15px;
+}

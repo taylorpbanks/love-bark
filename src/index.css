@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif !important;
+}
+
+body {
+  background: rgb(2,0,36);
+  background: fixed linear-gradient(360deg, rgba(9,121,69,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*font*/
+h5 {
+  font-weight: bold;
+  color: #097945;
+}
+
+/* Global Layout */
+.margin-top-sm {
+  margin-top: 15px;
+}
+
+.margin-top-md {
+  margin-top: 30px;
+}
+
+.margin-top-lg {
+  margin-top: 45px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-md {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+button.btn {
+  border-radius: 25px;
+}
+
+button.btn-primary {
+  background-color: #097945;
+  border: 1px solid #097945;
+}
+
+button.btn-primary:hover,
+button.btn-primary:focus {
+  background-color: #054c2b;
+  border: 1px solid #054c2b;
+}
+
+button.btn-secondary {
+  background-color: white;
+  color: #097945;
+  border: 2px solid #097945;
+  font-size: 1.25em;
+}
+
+button.btn-secondary:hover,
+button.btn-secondary:focus {
+  background-color: #097945;
+  color: white;
+  border: 2px solid #097945;
+}
+
+/* Links */
+a {
+  color: #097945 !important;
+  font-weight: bold;
+}

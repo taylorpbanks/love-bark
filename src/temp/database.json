@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Dart",
+    "breed": "Austrailian Shepherd",
+    "age": "8 months",
+    "sex": "M",
+    "color": "White & Grey & Tan Mix",
+    "weight": "38",
+    "firstDay": "2020-03-23",
+    "adoptionFee": "175",
+    "description": "Hey! I'm Dart! I love to play and run around with you!",
+    "image": "austrailian-shepherd-dart",
+    "traits": {
+      "exercise": 5,
+      "easeOfTraining": 4,
+      "friendliness": 5,
+      "playfulness": 5,
+      "leashManners": 3,
+      "dogSkills": 4
+    }
+  },
+  {
+    "featured": true,
+    "name": "Amelia",
+    "breed": "Dachshun",
+    "age": "2 years",
+    "sex": "F",
+    "color": "Brown",
+    "weight": "30",
+    "firstDay": "2020-01-15",
+    "adoptionFee": "125",
+    "description": "Hello, I am Amelia. I am a bashful girl.",
+    "image": "dachshun-amelia",
+    "traits": {
+      "exercise": 2,
+      "easeOfTraining": 2,
+      "friendliness": 1,
+      "playfulness": 2,
+      "leashManners": 5,
+      "dogSkills": 1
+    }
+  },
+  {
+    "name": "Sarge",
+    "breed": "German Shepherd",
+    "age": "4 years",
+    "sex": "M",
+    "color": "Tan & Black Mix",
+    "weight": "130",
+    "firstDay": "2020-01-01",
+    "adoptionFee": "100",
+    "description": "Good day, my name is Sarge.  I love getting exercise.",
+    "image": "german-shepherd-sarge",
+    "traits": {
+      "exercise": 5,
+      "easeOfTraining": 5,
+      "friendliness": 3,
+      "playfulness": 3,
+      "leashManners": 5,
+      "dogSkills": 5
+    }
+  },
+  {
+    "featured": true,
+    "name": "Parker",
+    "breed": "Golden Retriever",
+    "age": "5 years",
+    "sex": "M",
+    "color": "White",
+    "weight": "97",
+    "firstDay": "2020-02-16",
+    "adoptionFee": "100",
+    "description": "Heya man, my name is Parker!  I love to play!",
+    "image": "golden-retriever-parker",
+    "traits": {
+      "exercise": 5,
+      "easeOfTraining": 5,
+      "friendliness": 5,
+      "playfulness": 5,
+      "leashManners": 5,
+      "dogSkills": 5
+    }
+  },
+  {
+    "name": "Bleu",
+    "breed": "Pitbull Mix",
+    "age": "3 years",
+    "sex": "M",
+    "color": "Silver",
+    "weight": "86",
+    "firstDay": "2020-04-15",
+    "adoptionFee": "125",
+    "description": "Hey, I'm Bleu.  I love routine.",
+    "image": "pitbull-bleu",
+    "traits": {
+      "exercise": 3,
+      "easeOfTraining": 3,
+      "friendliness": 3,
+      "playfulness": 3,
+      "leashManners": 5,
+      "dogSkills": 1
+    }
+  },
+  {
+    "name": "Cooper",
+    "breed": "Rottweiler",
+    "age": "3 months",
+    "sex": "M",
+    "color": "Black & Tan Mix",
+    "weight": "15",
+    "firstDay": "2020-01-05",
+    "adoptionFee": "175",
+    "description": "Hi there, my name is Cooper. I am a young pup and eager to learn.",
+    "image": "rottweiler-cooper",
+    "traits": {
+      "exercise": 5,
+      "easeOfTraining": 5,
+      "friendliness": 5,
+      "playfulness": 5,
+      "leashManners": 1,
+      "dogSkills": 2
+    }
+  },
+  {
+    "featured": true,
+    "name": "Lady",
+    "breed": "Rottweiler",
+    "age": "6 years",
+    "sex": "F",
+    "color": "Black & Tan Mix",
+    "weight": "110",
+    "firstDay": "2020-03-15",
+    "adoptionFee": "100",
+    "description": "Hey, my name is Lady.  I am a sweet girl.",
+    "image": "rottweiler-lady",
+    "traits": {
+      "exercise": 3,
+      "easeOfTraining": 4,
+      "friendliness": 3,
+      "playfulness": 4,
+      "leashManners": 5,
+      "dogSkills": 3
+    }
+  },
+  {
+    "name": "Rose",
+    "breed": "Shiba Inu",
+    "age": "2 years",
+    "sex": "F",
+    "color": "Orange & White Mix",
+    "weight": "55",
+    "firstDay": "2020-02-02",
+    "adoptionFee": "150",
+    "description": "Hey, I am Rose.  I am shy at first but super friendly once I get to know you!",
+    "image": "shiba-inu-rose",
+    "traits": {
+      "exercise": 2,
+      "easeOfTraining": 2,
+      "friendliness": 3,
+      "playfulness": 2,
+      "leashManners": 2,
+      "dogSkills": 1
+    }
+  },
+  {
+    "name": "Spunky",
+    "breed": "Lab Retriever",
+    "age": "7 years",
+    "sex": "M",
+    "color": "White",
+    "weight": "90",
+    "firstDay": "2020-04-15",
+    "adoptionFee": "125",
+    "description": "Hey there, I am Spunky!  I am named because I got a lot of spunk!",
+    "image": "white-lab-spunky",
+    "traits": {
+      "exercise": 3,
+      "easeOfTraining": 2,
+      "friendliness": 5,
+      "playfulness": 5,
+      "leashManners": 4,
+      "dogSkills": 5
+    }
+  },
+  {
+    "name": "Lulu",
+    "breed": "Yorkshire Terrier",
+    "age": "4 months",
+    "sex": "F",
+    "color": "Black & Tan Mix",
+    "weight": "9",
+    "firstDay": "2020-01-13",
+    "adoptionFee": "175",
+    "description": "Hi, my name is Lulu.  I love to watch tv with you.",
+    "image": "yorkshire-terrier-lulu",
+    "traits": {
+      "exercise": 1,
+      "easeOfTraining": 2,
+      "friendliness": 1,
+      "playfulness": 1,
+      "leashManners": 1,
+      "dogSkills": 1
+    }
+  }
+]
