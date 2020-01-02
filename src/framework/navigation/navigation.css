@@ -5,3 +5,12 @@ nav {
 .logo-container {
     color: #04aeb1 !important;
 }
+
+nav a {
+    border-bottom: transparent 2px solid;
+}
+
+nav a:hover {
+    color: #04aeb1 !important;
+    border-bottom: #04aeb1 2px solid;
+}

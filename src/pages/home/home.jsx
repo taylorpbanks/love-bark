@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import dogs from '../../temp/database.json';
+import { Link } from 'react-router-dom';
+import { getFeaturedDogs } from '../../services/dogService/dogService';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './home.css';
 
 function Home(props) {
+  const [dogs, setFeaturedDogs] = useState();
+
+  useEffect(() => {
+    if (!dogs) {
+      getFeaturedDogs().then((results) => {
+        setFeaturedDogs(results);
+      })
+    }
+  });
+
   const handleClick = () => {
     props.history.push('/available-dogs');
   };
@@ -46,15 +57,18 @@ function Home(props) {
       <div className="margin-top-lg">
         <h3>Featured Dogs</h3>
         <Row>
-         {dogs.map(dog => (dog.featured &&
-          <Col key={dog.name} sm="4">
-            <div className="dog-card">
-              <img src={require(`../../images/dogs/${dog.image}.jpg`)} />
-              <h5>{dog.name}</h5>
-              {getDisplayAge(dog.age)}
-            </div>
+         {dogs && dogs.map(dog => (dog.featured &&
+          <Col key={dog.name} className="card-container" sm="4">
+            <Link to={`/available-dogs/${dog.name}`}>
+              <div className="dog-card">
+                <img src={require(`../../images/dogs/${dog.image}.jpg`)} />
+                <h5>{dog.name}</h5>
+                  {getDisplayAge(dog.age)}
+              </div>
+            </Link>
           </Col>
          ))}
+         {!dogs && <h6 className="pl-3">No featured dogs available.</h6>}
         </Row>
         <div className="margin-top-md btn-container">
           <Button className="align-content-center" color="secondary" onClick={handleClick}>

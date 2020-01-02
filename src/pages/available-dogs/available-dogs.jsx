@@ -1,26 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Row,
     Col,
     Button,
     Collapse,
+    Spinner,
   } from 'reactstrap';
-import dogs from '../../temp/database.json';
+import { getAllDogs } from '../../services/dogService/dogService';
+import { Link } from 'react-router-dom';
 import './available-dogs.css';
 import 'pretty-checkbox'
 
 function AvailableDogs(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [filter, setFilter] = useState({
-   age: [true, false],
-   playfulness: [true, false],
-   friendliness: [true, false],
-   exercise: [true, false],
-   easeOfTraining: [true, false],
-   dogSkills: [true, false],
-  });
-
   const handleToggle = () => setIsOpen(!isOpen);
+
+  const [dogs, setDogs] = useState();
+  useEffect(() => {
+    if (!dogs) {
+      getAllDogs().then((results) => {
+        setDogs(results);
+      })
+    }
+  });
 
   const traits = [
     {
@@ -91,7 +93,7 @@ function AvailableDogs(props) {
   };
 
   return (
-    <div className="available-dogs">
+    <div className="available-dogs-container">
       <h1>Available Dogs</h1>
 
       <div className="text-center margin-top-md">
@@ -119,15 +121,22 @@ function AvailableDogs(props) {
       </Collapse>
         
       <Row className="margin-top-lg">
-        {dogs.map(dog => (
+        {dogs && dogs.map(dog => (
           <Col className="margin-bottom-md" key={dog.name} sm="4">
-            <div className="dog-card">
-              <img src={require(`../../images/dogs/${dog.image}.jpg`)} />
-              <h5>{dog.name}</h5>
-              {getDisplayAge(dog.age)}
-            </div>
+            <Link to={`/available-dogs/${dog.name}`}>
+              <div className="dog-card">
+                <img src={require(`../../images/dogs/${dog.image}.jpg`)} />
+                <h5>{dog.name}</h5>
+                  {getDisplayAge(dog.age)}
+              </div>
+            </Link>
           </Col>
         ))}
+        {!dogs && (
+          <div className="loading-container">
+            <Spinner type="grow" style={{ width: '3rem', height: '3rem' }} color="success" /><br />
+          </div>
+        )}
       </Row>
     </div>
   );

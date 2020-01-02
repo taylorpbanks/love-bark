@@ -1,0 +1,12 @@
+.profile-container img {
+    width: 100%;
+}
+
+.profile-container .fa-bone {
+    color: #097945;
+}
+
+.profile-container label {
+    font-weight: bold;
+    color: #097945;
+}

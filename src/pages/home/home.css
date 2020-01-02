@@ -19,6 +19,9 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px #d2d2d2;
     cursor: pointer;
+    text-decoration: none;
+    color: initial;
+    font-weight: initial;
 }
 
 .dog-card img {
@@ -27,6 +30,10 @@
 
 .dog-card:hover {
     box-shadow: 2px 2px 5px;
+}
+
+.card-container a {
+    text-decoration: none !important;
 }
 
 /*mobile responsiveness*/

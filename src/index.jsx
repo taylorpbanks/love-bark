@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDog, faSignOutAlt, faCaretRight, faIdCard, faPaw, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDog, faSignOutAlt, faCaretRight, faIdCard, faPaw, faPhone, faEnvelope, faCaretLeft, faBone } from '@fortawesome/free-solid-svg-icons';
 import * as serviceWorker from './serviceWorker';
 
 import App from './App';
 
 import './index.css';
 
-library.add(faDog, faCaretRight, faSignOutAlt, faIdCard, faPaw, faPhone, faEnvelope);
+library.add(faDog, faCaretRight, faCaretLeft, faSignOutAlt, faIdCard, faPaw, faPhone, faEnvelope, faBone);
 
 const app = (
   <App />
