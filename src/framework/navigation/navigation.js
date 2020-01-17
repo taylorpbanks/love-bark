@@ -21,7 +21,7 @@ function Navigation(props) {
 
   return (
     <Navbar color="light" light expand="md">
-      <NavbarBrand href="/home" className="logo-container">
+      <NavbarBrand href="/" className="logo-container">
         <span className="pr-1">LoveBark</span>
         <FontAwesomeIcon icon="dog"/>
       </NavbarBrand>

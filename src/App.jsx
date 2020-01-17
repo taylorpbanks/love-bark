@@ -18,8 +18,7 @@ function App() {
       <Navigation />
       <Router>
         <div className="content-container">
-          <Route exact path="/" component={Login} />
-          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/available-dogs" component={AvailableDogs} />
           <Route path="/available-dogs/:name" component={Profile} />
           <Route path="/contact-us" component={ContactUs} />

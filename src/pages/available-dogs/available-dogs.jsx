@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import './available-dogs.css';
 import 'pretty-checkbox'
 
-function AvailableDogs(props) {
+function AvailableDogs() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen(!isOpen);
 
@@ -23,6 +23,12 @@ function AvailableDogs(props) {
       })
     }
   });
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const handlePageClick = (e, index) => {
+    e.preventDefault();
+    setCurrentPage(index);
+ };
 
   const traits = [
     {
